@@ -1,9 +1,8 @@
 const express = require('express');
-const articleController = require('../controllers/articleController');
+const articleController = require('../controllers');
 
 const router = express.Router();
 
-// Define routes for articles
 router
   .route('/')
   .get(articleController.getAllArticles)
